@@ -1,0 +1,66 @@
+html, body 
+{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body 
+{
+    position: relative; /* setting the blue background of the page to the maximum size*/
+    background-image: url('BG.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+.container
+{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1 /*Setting the Quote generator to be at the middle and on the top half of the page*/
+{
+    font-size: 36px;
+    margin-top: 0;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -15%);
+    color:white;
+}
+img#quoteBG 
+{
+    width: 1000px; /* Adjust width */
+    height: 500px; /* Adjusting height */
+    display: block;
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); /* Translate Img to dead center */
+}
+blockquote /*Quote text goes here*/
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: cursive, 'Apple Chancery', 'Segoe Script', cursive; /* Using a cursive font*/
+    font-size: 24px;
+    font-style: italic;
+    color: #ffffff;
+    margin: 20px 0;
+    text-align: center;
+    z-index: 1; /* Goes on top of the background image*/
+}
+button /*setting the button location, font, size*/
+{
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-top: 0;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -85%);
+}
